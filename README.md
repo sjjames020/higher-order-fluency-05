@@ -9,25 +9,57 @@
 5. Using the browser, verify that your solution is in your remote repo on Github.
 
 ## Problems 
+    
+### **Test all your solutions for the questions 1-4 with the following variable:** 
 
-1. Write a function that takes an array of numbers and returns a new array containing only the even numbers in the original array.
-```js
-onlyEven([3, 15, 2, 18, 21, 26]); //returns [2, 18, 26]
+```jsx
+const alumni = [
+{name:'Jarrit', job:'TPT',language:'JavaScript', age:23}, 
+{name:'Stephanie', job:'JPMorgan',language:'JavaScript', age:24}, 
+{name:'Devonte', job:'WW',language:'JavaScript', age:23}, 
+{name:'Enmanuel', job:'Asana',language:'JavaScript', age:23},
+{name:'Shemar', job:'SquareSpace',language:'JavaScript', age:23},
+{name:'Cielo', job:'NYT',language:'JavaScript', age:22},
+{name:'Carmen', job:'Marcy Lab School',language:'JavaScript', age:21},
+{name:'Itzel', job:'Marcy Lab School',language:'JavaScript', age:22},
+{name:'Ray', job:'Square Space',language:'JavaScript', age:21},
+{name:'Jan', job:'Square Space',language:'JavaScript', age:22},
+{name:'Uzma', job:'Thyme Care',language:'JavaScript', age:22}]
 ```
 
-2. Write a function that takes an array of numbers and returns a new array with the original array elements doubled.
-```js
-doubled([2, 40, 14, 3, 25]); //returns [4, 80, 28, 6, 50]
-```
+1. Write a function named `averageAge` that takes an array of objects and returns the average of all the ages from each age property in each object rounded to the nearest whole number. 
+    
+    ```jsx
+    averageAge(alumni) // 22
+    ```
 
-3. Write a function that takes a string argument and returns a new string with vowels deleted.
-```js
-removeVowelsString("code challenge"); //returns "cd chllng"
-```
+2. Write a function named `orderedAlumni` that takes an array of objects and sorts the objects by the age of the alumni from oldest to youngest. 
+    
+    ```jsx
+    orderedAlumni(alumni) // returns [
+      { name: 'Devonte', job: 'WW', language: 'JavaScript', age: 23 },
+      {
+        name: 'Shemar',
+        job: 'SquareSpace',
+        language: 'JavaScript',
+        age: 23
+      },
+      { name: 'Jarrit', job: 'TPT', language: 'JavaScript', age: 22 },
+      {
+        name: 'Stephanie',
+        job: 'JPMorgan',
+        language: 'JavaScript',
+        age: 21
+      },
+      { name: 'Enmanuel', job: 'Asana', language: 'JavaScript', age: 21 },
+      { name: 'Cielo', job: 'NYT', language: 'JavaScript', age: 21 }
+    ]
+    ```
 
-4. Write a function that takes a string and returns that string in snake case (all lowercase characteres with underscores between words):
-```js
-snakeCase("This is a Sentence"); // returns "this_is_a_sentence"
-```
+3. Write a function named `allUseJavaScript` that takes an array of objects and returns a boolean if for every object, the language property is 'JavaScript'.
+    
+        ```jsx
+        allUseJavaScript(alumni) // returns true
+        ```
 
 
